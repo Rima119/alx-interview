@@ -10,7 +10,7 @@ def pascal_triangle(n):
     """
     pt_list = []
     if (n <= 0):
-        return new_list
+        return pt_list
     pt_list.append([1])
     for i in range(n - 1):
         pt_list.append([1] + [pt_list[i][a] + pt_list[i][a + 1]
