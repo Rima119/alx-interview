@@ -3,7 +3,7 @@
 
 
 def isprime(n):
-    """ check if number is prime"""
+    """ n: number to check if it is prime"""
     for i in range(2, n):
         if n % i == 0:
             return False
@@ -18,8 +18,10 @@ def delete_numbers(n, nums):
 
 
 def isWinner(x, nums):
-    """ Return: name of the player that won the most rounds
+    """ where x is the number of rounds and nums is an array of n
+        Return: name of the player that won the most rounds
         Iriaf the winner cannot be determined, return None
+        You can assume n and x will not be larger than 10000
     """
     nums.sort()
     winner = False
